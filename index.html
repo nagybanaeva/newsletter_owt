@@ -16,6 +16,46 @@
         h2{color: #333333; margin: 10px 0 10px 0; font-family: 'Georgia','serif'; font-size: 22px; font-weight: bold;}
         h3{color: #333333; margin: 10px 0 10px 0; font-family: 'Georgia','serif'; font-size: 18px; font-weight: bold;}
         
+        .ExternalClass{     
+            width:100%; /*  A levél szélessége 100% legyen */ 
+        } 
+        .ExternalClass, 
+        .ExternalClass p, 
+        .ExternalClass span, 
+        .ExternalClass font, 
+        .ExternalClass td, 
+        .ExternalClass div{     
+            line-height: 100%; /*  Sormagasság 100% legyen Outlookban */ 
+        } 
+ 
+        #outlook a{     
+            padding:0; /* */ 
+        } 
+ 
+        table{     
+            mso-table-lspace:0pt; /* táblázatok margója Outlook */     
+            mso-table-rspace:0pt; 
+        } 
+ 
+        img{     
+            -ms-interpolation-mode:bicubic; /* kép automatikus átméretezésánek megszüntetése */     border:none;     
+            height:auto;     
+            line-height:100%;     
+            utline:none;     
+            ax-width: 100%!important; 
+        } 
+
+        body{     
+            -webkit-text-size-adjust:100%; /* betűméret formázás megszüntetése: Iphone */     
+            -ms-text-size-adjust:100%; /* betűméret formázás megszüntetése: Windows Mobile */ 
+        } 
+        
+        @media screen and (max-device-width: 600px) {
+            #content-table {         
+                display: block;         
+                width: 100%!important;     
+            } /* Tartalmi táblázat legyen 600 helyett 100% */ }
+        
     </style>
 </head>
 <body style="margin: 0; padding: 0;">
